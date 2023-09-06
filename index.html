@@ -42,10 +42,61 @@
         </div>
       </div>
     </header>
-    <section
-      class="overlay-section d-flex justify-content-center align-items-center"
-    >
-      <h5>Section</h5>
+    <section class="overlay-section">
+      <div class="video-section">
+        <video
+          poster="videos/3153190374.00_00_00_00.Still001.jpg"
+          autoplay
+          muted
+          loop
+        >
+          <source src="videos/3153190374.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div
+        class="content-section position-relative d-flex justify-content-center align-items-center py-5"
+      >
+        <div class="container">
+          <div class="double-tri-sm">
+            <img src="images/double-tri-sm.png" alt="" />
+          </div>
+          <div class="bg-glass p-5 rounded-5 mt-5">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+              nam mollitia aperiam autem eligendi eveniet iure beatae vitae
+              quibusdam laboriosam non fuga debitis quod, atque placeat iusto
+              dignissimos eum unde culpa. Neque perspiciatis at adipisci saepe
+              unde, necessitatibus dolores sint incidunt dolorem praesentium
+              consequuntur possimus amet delectus iste, debitis ut fuga eum
+              pariatur. Saepe temporibus magni quaerat sapiente quam, modi
+              reiciendis consequuntur impedit esse laudantium commodi eaque
+              dicta, ea debitis iure doloremque blanditiis quod ipsa! Vero
+              incidunt alias ad qui similique atque odio quaerat laborum
+              praesentium maxime. Vel iste laboriosam hic? Inventore, porro
+              beatae! Voluptatibus earum consequatur molestias provident
+              tenetur! Ipsam officia, totam nesciunt ut tenetur earum doloremque
+              sint. Illo repellendus, autem non vel corrupti voluptatum fugit,
+              tempora aperiam eius quod maiores. Distinctio hic facilis vel rem!
+              Sequi doloremque reiciendis totam enim, commodi iure voluptatibus
+              minima explicabo quibusdam eaque molestiae neque suscipit dolores
+              architecto reprehenderit officiis aut voluptatem. Consequatur
+              nobis id aliquam assumenda quod nulla earum rerum unde, possimus,
+              nostrum pariatur, nesciunt ullam. Ab sequi veniam veritatis natus
+              autem. Deleniti quos numquam, facere est quas exercitationem,
+              animi saepe tenetur, rem expedita at perspiciatis reprehenderit
+              eligendi qui optio quisquam illo nobis repellendus veritatis
+              dignissimos beatae aliquid ipsum doloribus! Qui iure ad in dolores
+              dolorem laborum explicabo, repellendus aut rem beatae quo
+              sapiente. Sit iure distinctio in dolore officiis ducimus nostrum
+              delectus deleniti, assumenda expedita ab eligendi reiciendis
+              praesentium doloribus, est facere. Natus ipsa porro ea impedit
+              voluptas, facere magnam et, expedita ipsum dolores, aperiam illum
+              possimus vel quibusdam nesciunt. Quisquam, vitae.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <footer class="footer pt-5">
       <div class="wparrer">
@@ -152,7 +203,22 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
     <script>
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.to(".double-tri-sm img", {
+        rotation: 360,
+        x: 1500,
+        duration: 1,
+        scrollTrigger: {
+          trigger: ".double-tri-sm",
+          start: "top center",
+          markers: true,
+          scrub: 3,
+        },
+      });
       var prevScrollpos = window.pageYOffset;
       window.onscroll = function () {
         var currentScrollPos = window.pageYOffset;
@@ -163,9 +229,7 @@
         }
         prevScrollpos = currentScrollPos;
       };
-      //let footerHeight = document.querySelector("footer").outerHeight;
       let footerHeight = document.querySelector("footer").offsetHeight;
-      console.log(footerHeight);
       document.querySelector(".overlay-section").style.marginBottom =
         footerHeight + "px";
     </script>

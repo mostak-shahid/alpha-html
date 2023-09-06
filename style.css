@@ -17,11 +17,22 @@ a,
 }
 
 .overlay-section {
-  height: 200vh;
   position: relative;
   z-index: 2;
-  background-color: #ffffff;
   margin-bottom: 0;
+  background-image: url(images/bg.png);
+  background-color: #ffffff;
+  background-repeat: repeat-y;
+}
+
+.video-section video {
+  width: 100%;
+}
+
+.double-tri-sm {
+  position: absolute;
+  top: 50%;
+  left: 0%;
 }
 
 .btn-theme {
@@ -33,6 +44,20 @@ a,
   background-color: #fcb432;
   color: #131d37;
   border-color: #fcb432;
+  border-width: 2px;
+  font-weight: 700;
+}
+.btn-theme-2:hover {
+  background-color: transparent;
+  color: #fcb432;
+  border-color: #fcb432;
+}
+
+.bg-glass {
+  background: rgba(123, 123, 138, 0.2);
+  backdrop-filter: blur(10.5189px);
+  -webkit-backdrop-filter: blur(10.5189px);
+  -moz-backdrop-filter: blur(10.5189px);
 }
 
 #header {

@@ -21,11 +21,22 @@ a,
   transition: all 0.3s ease-out;
 }
 .overlay-section {
-  height: 200vh;
   position: relative;
   z-index: 2;
-  background-color: #ffffff;
   margin-bottom: 0;
+  background-image: url(images/bg.png);
+  background-color: #ffffff;
+  background-repeat: repeat-y;
+}
+.video-section {
+  video {
+    width: 100%;
+  }
+}
+.double-tri-sm {
+  position: absolute;
+  top: 50%;
+  left: 0%;
 }
 .btn-theme {
   background-color: $primary_color;
@@ -35,6 +46,19 @@ a,
   background-color: $secondary_color;
   color: $primary_color;
   border-color: $secondary_color;
+  border-width: 2px;
+  font-weight: 700;
+  &:hover {
+    background-color: transparent;
+    color: $secondary_color;
+    border-color: $secondary_color;
+  }
+}
+.bg-glass {
+  background: rgb(123 123 138 / 20%);
+  backdrop-filter: blur(10.5189px);
+  -webkit-backdrop-filter: blur(10.5189px);
+  -moz-backdrop-filter: blur(10.5189px);
 }
 #header {
   position: fixed;
