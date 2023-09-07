@@ -1,5 +1,8 @@
 $primary_color: #131d37;
-$secondary_color: #fcb432;
+$secondary_color: #fbb331;
+body {
+  font-family: "Montserrat", sans-serif;
+}
 .hidden-link {
   position: absolute;
   left: 0;
@@ -25,6 +28,7 @@ a,
   z-index: 2;
   margin-bottom: 0;
   background-image: url(images/bg.png);
+  background-position: top center;
   background-color: #ffffff;
   background-repeat: repeat-y;
 }
@@ -54,6 +58,12 @@ a,
     border-color: $secondary_color;
   }
 }
+.text-theme {
+  color: $primary_color;
+}
+.text-theme-2 {
+  color: $secondary_color;
+}
 .bg-glass {
   background: rgb(123 123 138 / 20%);
   backdrop-filter: blur(10.5189px);
@@ -77,14 +87,49 @@ footer {
   left: 0;
   right: 0;
   z-index: 1;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 26px;
 
   a {
     color: #ffffff;
     text-decoration: none;
   }
+  .logo-container {
+    max-width: 140px;
+    margin-bottom: 20px;
+  }
   .widget {
     &:not(:last-child) {
       margin-bottom: 40px;
     }
+    ul.menu {
+      li {
+        margin-bottom: 11px;
+      }
+    }
+  }
+  .widget-title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  .address-wrap {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+    .address-title {
+      margin-bottom: 16px;
+      small {
+        font-weight: 300;
+      }
+    }
+  }
+  .copyright-content {
+    padding-top: 60px;
+    padding-bottom: 30px;
   }
 }

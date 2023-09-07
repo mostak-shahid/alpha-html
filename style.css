@@ -1,3 +1,7 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 .hidden-link {
   position: absolute;
   left: 0;
@@ -21,6 +25,7 @@ a,
   z-index: 2;
   margin-bottom: 0;
   background-image: url(images/bg.png);
+  background-position: top center;
   background-color: #ffffff;
   background-repeat: repeat-y;
 }
@@ -41,16 +46,24 @@ a,
 }
 
 .btn-theme-2 {
-  background-color: #fcb432;
+  background-color: #fbb331;
   color: #131d37;
-  border-color: #fcb432;
+  border-color: #fbb331;
   border-width: 2px;
   font-weight: 700;
 }
 .btn-theme-2:hover {
   background-color: transparent;
-  color: #fcb432;
-  border-color: #fcb432;
+  color: #fbb331;
+  border-color: #fbb331;
+}
+
+.text-theme {
+  color: #131d37;
+}
+
+.text-theme-2 {
+  color: #fbb331;
 }
 
 .bg-glass {
@@ -78,11 +91,42 @@ footer {
   left: 0;
   right: 0;
   z-index: 1;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 26px;
 }
 footer a {
   color: #ffffff;
   text-decoration: none;
 }
+footer .logo-container {
+  max-width: 140px;
+  margin-bottom: 20px;
+}
 footer .widget:not(:last-child) {
   margin-bottom: 40px;
+}
+footer .widget ul.menu li {
+  margin-bottom: 11px;
+}
+footer .widget-title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+footer .address-wrap:not(:last-child) {
+  margin-bottom: 24px;
+}
+footer .address-wrap .address-title {
+  margin-bottom: 16px;
+}
+footer .address-wrap .address-title small {
+  font-weight: 300;
+}
+footer .copyright-content {
+  padding-top: 60px;
+  padding-bottom: 30px;
 }/*# sourceMappingURL=style.css.map */

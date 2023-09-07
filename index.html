@@ -14,6 +14,11 @@
       href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
       rel="stylesheet"
     />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body
@@ -45,6 +50,7 @@
     <section class="overlay-section">
       <div class="video-section">
         <video
+          class="object-fit-fill"
           poster="videos/3153190374.00_00_00_00.Still001.jpg"
           autoplay
           muted
@@ -98,25 +104,27 @@
         </div>
       </div>
     </section>
-    <footer class="footer pt-5">
+    <footer class="footer">
       <div class="wparrer">
         <div class="container">
+          <div class="logo-container">
+            <img
+              src="images/logo.svg"
+              alt="Alpha Commerz LTD - Logo"
+              class="img-fluid img-footer-logo"
+              width="149"
+              height="69"
+            />
+          </div>
           <div class="row">
             <div class="col-lg-6">
-              <div class="logo-container mb-3">
-                <img
-                  src="images/logo.svg"
-                  alt="Alpha Commerz LTD - Logo"
-                  class="img-fluid img-footer-logo"
-                  width="149"
-                  height="69"
-                />
-              </div>
-              <h5 class="widget-title">Our Offices</h5>
+              <h5 class="widget-title text-theme-2">Our Offices</h5>
               <div class="row">
                 <div class="col-lg-6">
                   <div class="address-wrap">
-                    <h5 class="address-title">Bangladesh</h5>
+                    <h5 class="address-title">
+                      Bangladesh <small>(HQ)</small>
+                    </h5>
                     <div class="address details">
                       House# 275/d (Old), 46-KHA (New), Road No. 27 (Old), 16
                       (New) Rangs Nasim Square, Level – 12, Dhanmondi, Dhaka
@@ -126,9 +134,20 @@
                 </div>
                 <div class="col-lg-6">
                   <div class="address-wrap">
-                    <h5 class="address-title">Sweden</h5>
+                    <h5 class="address-title">
+                      Sweden <small>(Global HQ)</small>
+                    </h5>
                     <div class="address details">
                       WTC Malmö, Skeppsgatan 19 211 11 Malmö, Sweden
+                    </div>
+                  </div>
+                  <div class="address-wrap">
+                    <h5 class="address-title">
+                      UK <small>(Registered Office)</small>
+                    </h5>
+                    <div class="address details">
+                      The Shard – Floor 24/25, 32 London Bridge Street London,
+                      SE1 9SG
                     </div>
                   </div>
                 </div>
@@ -136,34 +155,37 @@
             </div>
             <div class="col-lg-3">
               <div class="widget">
-                <h5 class="widget-title">Services</h5>
-                <ul class="list-unstyled">
-                  <li><a href="#">Link 1</a></li>
-                  <li><a href="#">Link 1</a></li>
-                  <li><a href="#">Link 1</a></li>
-                  <li><a href="#">Link 1</a></li>
-                  <li><a href="#">Link 1</a></li>
+                <h5 class="widget-title text-theme-2">Services</h5>
+                <ul class="list-unstyled menu">
+                  <li><a href="#">Web Development</a></li>
+                  <li><a href="#">Digital Marketing</a></li>
+                  <li><a href="#">Email Marketing</a></li>
+                  <li><a href="#">Graphics Design</a></li>
+                  <li><a href="#">Animation & Video</a></li>
+                  <li><a href="#">Category Management</a></li>
+                  <li><a href="#">Content Development</a></li>
                 </ul>
               </div>
             </div>
             <div class="col-lg-3">
               <div class="widget">
-                <h5 class="widget-title">Contact</h5>
+                <h5 class="widget-title text-theme-2">Contact</h5>
                 <ul class="list-unstyled">
                   <li>
-                    <a href="tel:+880248811891">
-                      <i class="fas fa-mobile-alt"></i>
-                      <span class="elementor-icon-list-text"
-                        >+88-02-48811891</span
+                    <a href="mailto:info@alphacommerz.com.bd">
+                      <span class="icon-list-text"
+                        >info@alphacommerz.com.bd</span
                       >
                     </a>
                   </li>
                   <li>
-                    <a href="mailto:info@alphacommerz.com">
-                      <i aria-hidden="true" class="far fa-envelope"></i>
-                      <span class="elementor-icon-list-text"
-                        >info@alphacommerz.com</span
-                      >
+                    <a href="tel:+880241021339">
+                      <span class="icon-list-text">+88 02 41021339</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="tel:+880241021340">
+                      <span class="icon-list-text">+88 02 41021340</span>
                     </a>
                   </li>
                 </ul>
@@ -190,8 +212,8 @@
               </div>
             </div>
           </div>
-          <div class="copyright-content pt-2 pb-3 text-center">
-            Copyright © 2022 <strong>Alpha Commerz Ltd.</strong> All Rights
+          <div class="copyright-content text-center">
+            Copyright © 2023 <strong>Alpha Commerz Ltd.</strong> All Rights
             Reserved. <a href="#" target="_blank">Privacy Policy</a>
             <a href="#" target="_blank">Cookies Policy.</a>
           </div>
