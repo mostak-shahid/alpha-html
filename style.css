@@ -126,6 +126,17 @@ footer .address-wrap .address-title {
 footer .address-wrap .address-title small {
   font-weight: 300;
 }
+footer .social-icons li a {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+}
 footer .copyright-content {
   padding-top: 60px;
   padding-bottom: 30px;
